@@ -28,7 +28,7 @@ def time_to_seconds(time):
 
 
 ## Commands --------------------------------
-@bot.on_message(filters.command(['start']))
+@bot.on_message(filters.command(['start'])&filters.private)
 def start(client, message):
     TamilBots = """ Hoşgeldin [{}](tg://user?id={}), 
 **BEN DJ NEFİSE DESTEKÇİM @Azerbesk.
