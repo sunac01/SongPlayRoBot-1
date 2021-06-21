@@ -54,7 +54,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('👸🏻 DJ Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼')
+    m = message.reply('Slm Cnm')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -92,7 +92,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("Çok Beklersin")
+    m.edit("👸🏻 DJ Nefise Şarkıyı Gönderiyor Biraz Bekle Tatlım 🌼")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
